@@ -4,9 +4,7 @@ name = input("What's your name?\n")
 if name == "faisal":
     print("Welcome " + name + ", select your option")
 
-
-    i = 0
-  
+   i = 0
  # Using while loop
     while True:
         if i==100:
@@ -55,6 +53,3 @@ if name == "faisal":
     i += 1
 else :
     print("Please write right name")
-
-
-    
