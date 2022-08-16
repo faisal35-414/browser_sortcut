@@ -1,20 +1,21 @@
-
 name = input("What's your name?\n")
 
 if name == "faisal":
     print("Welcome " + name + ", select your option")
 
-   i = 0
+    f = 0
  # Using while loop
     while True:
-        if i==100:
+        if f==100:
             break
         print("""
         1. Github
         2. Email
         3. Facebook
         4. Youtube
-        5. exit """)
+        5. Google classroom
+        6. Student portal
+        7. exit """)
         
         number = input()
     
@@ -45,11 +46,23 @@ if name == "faisal":
             get_url= webbrowser.open('https://www.youtube.com/')
  
         elif number == "5":
+            print("Open classroom")
+
+            import webbrowser
+            get_url= webbrowser.open('https://classroom.google.com/')
+        
+        elif number == "6":
+            print("Open studentportal")
+
+            import webbrowser
+            get_url= webbrowser.open('http://studentportal.diu.edu.bd/#/dashboard1')
+        
+        elif number == "7":
             break
 
         else : 
             print("Please write right word")
 
-    i += 1
+    f += 1
 else :
     print("Please write right name")
