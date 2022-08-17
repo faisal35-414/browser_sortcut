@@ -4,10 +4,13 @@ if name == "faisal":
     print("Welcome " + name + ", select your option")
 
     f = 0
+ 
  # Using while loop
     while True:
         if f==100:
+            print("Time out")
             break
+
         print("""
         1. Github
         2. Email
@@ -15,7 +18,11 @@ if name == "faisal":
         4. Youtube
         5. Google classroom
         6. Student portal
-        7. exit """)
+        7. Linkedin
+        8. Whatsapp
+        9. Noureldinehab
+        10. Udemy
+        e. exit """)
         
         number = input()
     
@@ -58,11 +65,36 @@ if name == "faisal":
             get_url= webbrowser.open('http://studentportal.diu.edu.bd/#/dashboard1')
         
         elif number == "7":
+            print("Open linkedin")
+
+            import webbrowser
+            get_url= webbrowser.open('https://www.linkedin.com/feed/')
+
+        elif number == "8":
+            print("Open whatsapp")
+
+            import webbrowser
+            get_url= webbrowser.open('https://web.whatsapp.com/')   
+
+        elif number == "9":
+            print("Open noureldinehab")
+
+            import webbrowser
+            get_url= webbrowser.open('https://noureldinehab.medium.com/')  
+
+        elif number == "10":
+            print("Open udemy")
+
+            import webbrowser
+            get_url= webbrowser.open('https://www.udemy.com/')
+
+        elif number == "e":
             break
 
         else : 
             print("Please write right word")
 
     f += 1
+
 else :
     print("Please write right name")
