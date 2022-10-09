@@ -1,3 +1,4 @@
+import webbrowser
 name = input("What's your name?\n")
 
 if name == "faisal":
@@ -28,64 +29,42 @@ if name == "faisal":
     
         if number == "1":
             print("Open git")
-    
-            import webbrowser
             get_url= webbrowser.open('https://github.com/')
-
 
         elif number == "2":
             print("Open Email")
-    
-            import webbrowser
             get_url= webbrowser.open('https://mail.google.com/')
-
 
         elif number == "3":
             print("Open facebook")
-            
-            import webbrowser
             get_url= webbrowser.open('https://www.facebook.com/')
 
         elif number == "4":
             print("Open youtube")
-    
-            import webbrowser
             get_url= webbrowser.open('https://www.youtube.com/')
  
         elif number == "5":
             print("Open classroom")
-
-            import webbrowser
             get_url= webbrowser.open('https://classroom.google.com/')
         
         elif number == "6":
             print("Open studentportal")
-
-            import webbrowser
             get_url= webbrowser.open('http://studentportal.diu.edu.bd/#/dashboard1')
         
         elif number == "7":
             print("Open linkedin")
-
-            import webbrowser
             get_url= webbrowser.open('https://www.linkedin.com/feed/')
 
         elif number == "8":
             print("Open whatsapp")
-
-            import webbrowser
             get_url= webbrowser.open('https://web.whatsapp.com/')   
 
         elif number == "9":
             print("Open noureldinehab")
-
-            import webbrowser
             get_url= webbrowser.open('https://noureldinehab.medium.com/')  
 
         elif number == "10":
             print("Open udemy")
-
-            import webbrowser
             get_url= webbrowser.open('https://www.udemy.com/')
 
         elif number == "e":
@@ -95,6 +74,5 @@ if name == "faisal":
             print("Please write right word")
 
     f += 1
-
 else :
     print("Please write right name")
